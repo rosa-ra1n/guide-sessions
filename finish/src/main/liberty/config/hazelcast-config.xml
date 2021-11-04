@@ -13,12 +13,14 @@
 <hazelcast xmlns="http://www.hazelcast.com/schema/config"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.hazelcast.com/schema/config
-       https://hazelcast.com/schema/config/hazelcast-config-3.12.xsd">
-    <!-- tag::group[] -->
-    <group>
-        <!-- tag::cartCluster[] -->
-        <name>CartCluster</name>
-        <!-- end::cartCluster[] -->
-    </group>
-    <!-- end::group[] -->
+       https://hazelcast.com/schema/config/hazelcast-config-3.12.xsd"> 
+    <network>
+        <join>
+          <multicast enabled="false"/>
+          <kubernetes enabled="true">
+               <service-dns>hazelcast.liberty-guide-demo.svc.cluster.local</service-dns>
+               <service-dns-timeout>5</service-dns-timeout>
+          </kubernetes>
+        </join>
+    </network>
 </hazelcast>
