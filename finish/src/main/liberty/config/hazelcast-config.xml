@@ -14,7 +14,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.hazelcast.com/schema/config
        https://hazelcast.com/schema/config/hazelcast-config-3.12.xsd"> 
-    <network>
+     
+    <!-- tag::group[] -->
+    <group>
+        <!-- tag::cartCluster[] -->
+        <name>CartCluster</name>
+        <!-- end::cartCluster[] -->
+    </group>
+    <!-- end::group[] -->
+    <!-- <network>
         <join>
           <multicast enabled="false"/>
           <kubernetes enabled="true">
@@ -22,5 +30,5 @@
                <service-dns-timeout>5</service-dns-timeout>
           </kubernetes>
         </join>
-    </network>
+    </network> -->
 </hazelcast>
