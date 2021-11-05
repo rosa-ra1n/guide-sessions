@@ -22,12 +22,12 @@
         <!-- end::cartCluster[] -->
     </group>
 
-    <network>
+    <!-- <network>
         <join>
             <multicast enabled="true"/>
             <kubernetes enabled="false"/>
         </join>
-    </network>
+    </network> -->
     <!-- end::group[] -->
     <!-- <network>
         <join>
