@@ -1,1 +1,1 @@
--Dhazelcast.diagnostics.enabled=true
+-Dhazelcast.diagnostics.enabled=true -Dhazelcast.jcache.provider.type=server
