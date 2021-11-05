@@ -21,6 +21,13 @@
         <name>CartCluster</name>
         <!-- end::cartCluster[] -->
     </group>
+
+    <network>
+        <join>
+            <multicast enabled="true"/>
+            <kubernetes enabled="false"/>
+        </join>
+    </network>
     <!-- end::group[] -->
     <!-- <network>
         <join>
