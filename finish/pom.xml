@@ -38,8 +38,8 @@
         <!-- Hazelcast Dependency -->
         <dependency>
             <groupId>com.hazelcast</groupId>
-            <artifactId>hazelcast</artifactId>
-            <version>5.0</version>
+            <artifactId>hazelcast-all</artifactId>
+            <version>3.12.12</version>
             <scope>test</scope>
         </dependency>
         
@@ -104,8 +104,8 @@
                     <artifactItems>
                         <artifactItem>
                             <groupId>com.hazelcast</groupId>
-                            <artifactId>hazelcast</artifactId>
-                            <version>5.0</version>
+                            <artifactId>hazelcast-all</artifactId>
+                            <version>3.12.12</version>
                             <type>jar</type>
                         </artifactItem>
                     </artifactItems>
